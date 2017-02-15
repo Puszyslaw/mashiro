@@ -131,7 +131,9 @@ handleMessageEvent conn _ = return ()
 
 
 replyTo :: Text -> Text
-replyTo "ping"     = ", pong!"
-replyTo "dobranoc" = ", お休み!"
-replyTo "araara"   = ", アラアラ!"
-replyTo _          = ", ?"
+replyTo "ping"        = ", pong!"
+replyTo "dobranoc"    = ", お休み!"
+replyTo "araara"      = ", アラアラ!"
+replyTo _             = ", ?"
+replyTo "meow"        = ", meow!"
+replyTo "dzień dobry" = ", おはよう"
